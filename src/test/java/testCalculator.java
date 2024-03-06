@@ -6,42 +6,52 @@ public class testCalculator {
     }
 
     @Test
-    public void testSoma(){
-        System.out.println("Soma");
+    public void testSumSucess(){
+        System.out.println("Teste Soma Correta");
         int a = 10;
         int b = 20;
         int expResult = 30;
-        int result = calculo.Soma(a, b);
+        int result = calculation.Sum(a, b);
         assertEquals(expResult, result);
     }
-
+    /*
     @Test
-    public void testSubtracao(){
-        System.out.println("Subtração");
+    public void testSumFailed(){
+        System.out.println("Teste Soma incorreta");
+        int a = 10;
+        int b = 25;
+        int expResult = 30;
+        int result = calculation.Sum(a, b);
+        assertEquals(expResult, result);
+    }
+    */
+    @Test
+    public void testSubtractionSucess(){
+        System.out.println("Teste Subtração Correta");
         int a = 20;
         int b = 10;
         int expResult = 10;
-        int result = calculo.Subtracao(a, b);
+        int result = calculation.Subtraction(a, b);
         assertEquals(expResult, result);
     }
 
     @Test
-    public void testMultiplicacao(){
-        System.out.println("Multiplicação");
+    public void testMultiplicationSucess(){
+        System.out.println("Teste Multiplicação Correta");
         int a = 5;
         int b = 10;
         int expResult = 50;
-        int result = calculo.Multiplicacao(a, b);
+        int result = calculation.Multiplication(a, b);
         assertEquals(expResult, result);
     }
 
     @Test
-    public void testDivisao(){
-        System.out.println("Divisão");
+    public void testDivisionSucess(){
+        System.out.println("Teste Divisão Correta");
         float a = 20;
         float b = 10;
         float expResult = 2.0f;
-        float result = calculo.Divisao(a, b);
+        float result = calculation.Division(a, b);
         assertEquals(expResult, result, 0);
     }
 }
