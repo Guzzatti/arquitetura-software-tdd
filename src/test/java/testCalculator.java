@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 public class testCalculator {
     public testCalculator() {
     }
-
+    //teste de soma com sucesso
     @Test
     public void testSumSucess(){
         System.out.println("Teste Soma Correta");
@@ -14,17 +14,7 @@ public class testCalculator {
         int result = calculation.Sum(a, b);
         assertEquals(expResult, result);
     }
-    /*
-    @Test
-    public void testSumFailed(){
-        System.out.println("Teste Soma incorreta");
-        int a = 10;
-        int b = 25;
-        int expResult = 30;
-        int result = calculation.Sum(a, b);
-        assertEquals(expResult, result);
-    }
-    */
+    // teste subtracao
     @Test
     public void testSubtractionSucess(){
         System.out.println("Teste Subtração Correta");
@@ -34,7 +24,7 @@ public class testCalculator {
         int result = calculation.Subtraction(a, b);
         assertEquals(expResult, result);
     }
-
+    //teste multiplicacao
     @Test
     public void testMultiplicationSucess(){
         System.out.println("Teste Multiplicação Correta");
@@ -44,7 +34,7 @@ public class testCalculator {
         int result = calculation.Multiplication(a, b);
         assertEquals(expResult, result);
     }
-
+    //teste divisao
     @Test
     public void testDivisionSucess(){
         System.out.println("Teste Divisão Correta");
